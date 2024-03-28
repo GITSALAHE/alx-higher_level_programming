@@ -1,15 +1,8 @@
 #!/usr/bin/python3
-
-
-def magic_calculation(a, b):
-    """Match bytecode provided by ALX School."""
-    from magic_calculation_102 import add, sub
-
+def magic_calculation(a, b, c):
     if a < b:
-        c = add(a, b)
-        for i in range(4, 6):
-            c = add(c, i)
-        return (c)
-
+        return c
+    elif c > b:
+        return a + b
     else:
-        return (sub(a, b))
+        return (a * b) - c
